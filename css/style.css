@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.landing{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 777777;
+  display: flex;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  background-color: black;
+}
+
+.sideBar{
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+}
+
+.navLinks{
+  width: 80%;
+  height: 100%;
+  background-color: black;
+}
+
+.navLinks ul{
+  list-style-type: none;
+  color: white;
+  margin-top: 30px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.navIcons{
+  width :20%;
+ height: 100%;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ background-color: white;
+}
+
+.navIcons #toggle{
+  cursor: pointer;
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+}
+
+.social, .navFooter{
+  color: white;
+}
+
+.navFooter{
+  position: absolute;
+  bottom: 0;
+}
+
+
+.meal{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+ 
+}
+.meal-layer{
+  position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top ease .8s;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+.meal:hover .meal-layer{
+  top : 0;
+}
+
+#boxContainer{
+  position: relative;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  display: none;
+  justify-content: center;
+}
+
+.btn:focus {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+  outline: 0;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+
+.closeBtn,.ingredients{
+  cursor: pointer;
+}
+
+#img{
+width: 90%;
+}
+
+
+
+
